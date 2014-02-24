@@ -1,17 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	font-weight: 200;
+
+	line-height: 30px;
+
+	color: #000;
+}
+
+p {
+	margin: 40px 0;
+}
+
+.col {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+
+	/* padding: 0 40px; */
+}
+
+.col.left {
+	border-right: 1px solid #D8B14B;
+}
+
+section, .message-board {
+	padding: 0 40px 40px 40px;
+}
+
+section {
+	padding-bottom: 0;
+}
+
+section.gifts {
+	background: url( ../img/gift.gif ) no-repeat top center;
+	padding-top: 170px;
+	margin-top: 20px;
+}
+
+h2, h3, h4 {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 22px;
+	text-align: center;
+}
+
+h2:before {
+	content: '';
+	width: 34px;
+	height: 18px;
+	background: url( ../img/left-flourish.png ) no-repeat;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+h2:after {
+	content: '';
+	width: 34px;
+	height: 18px;
+	background: url( ../img/right-flourish.png ) no-repeat;
+	display: inline-block;
+	margin-left: 20px;
 }
 
 .container {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 /* MESSAGES */
 
 .message-board {
-	width:370px;
-	height:540px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	border-bottom: 1px solid #D8B14B;
 }
 
 .message-board .message {
@@ -31,8 +102,8 @@ body {
 
 .message.right-side {
 	float:right;
-	border:1px solid #5bcee2;
-	background:#5bcee2;
+	border:1px solid #79cdcb;
+	background:#79cdcb;
 }
 
 .message.right-side p {
@@ -192,4 +263,12 @@ body {
 
 .clear {
 	clear: both;
+}
+
+
+
+.united-nations {
+	color: #D8B04B;
+	font-weight: 400;
+	font-style: italic;
 }
