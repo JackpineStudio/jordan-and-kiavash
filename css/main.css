@@ -15,12 +15,88 @@ body {
 	color: #000;
 }
 
+nav {
+	width: 100%;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 20px;
+	padding: 80px 0;
+
+	text-transform: uppercase;
+
+	margin-top: -90px;
+}
+
+nav ul {
+	margin: 0; padding: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 40px;
+}
+
+nav ul li a {
+	color: #FFF;
+	font-weight: 500;
+}
+
+nav ul li.logo {
+	position: relative;
+	width: 80px;
+	height: 87px;
+}
+
+nav ul li.logo a {
+	text-indent: -9999px;
+	width: 80px;
+	height: 87px;
+
+	background: url( ../img/logo.png ) no-repeat center;
+	display: block;
+
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+
+nav ul li a:hover {
+	color: #FFF;
+}
+
+header {
+	width: 100%;
+	border-bottom: 1px solid #D8B14B;
+	text-align: center;
+}
+
+.bg {
+	background: url( ../img/j+k.jpg ) center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 764px;
+}
+
+.bg h1, .bg h3 {
+	color: #FFF;
+	margin: 10px 0; padding: 0;
+}
+
+.bg h1 {
+	margin-top: 260px;
+}
+
+.bg h3 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: normal;
+}
+
 p {
 	margin: 40px 0;
 }
 
 .col {
-	width: 49%;
+	width: 49.80%;
 	display: inline-block;
 	vertical-align: top;
 
@@ -29,6 +105,10 @@ p {
 
 .col.left {
 	border-right: 1px solid #D8B14B;
+}
+
+.col.right {
+	width: 49%;
 }
 
 section, .message-board {
@@ -41,13 +121,23 @@ section {
 
 section.gifts {
 	background: url( ../img/gift.gif ) no-repeat top center;
-	padding-top: 170px;
-	margin-top: 20px;
+	padding-top: 200px;
+	margin-top: 40px;
+}
+
+h1 {
+	margin: 0 auto;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: 200;
+	margin: 30px 0;
 }
 
 h2, h3, h4 {
 	font-family: 'Merriweather', serif;
 	font-style: italic;
+
+	margin: 20px 0;
 }
 
 h2 {
@@ -271,4 +361,83 @@ h2:after {
 	color: #D8B04B;
 	font-weight: 400;
 	font-style: italic;
+}
+
+/* map */
+
+.map {
+	height: 600px;
+
+	border-top: 1px solid #D8B14B;
+	border-bottom: 1px solid #D8B14B;
+
+	background: #E7D2B4;
+}
+
+/* form jank */
+
+.required {
+	font-size: 14px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.form {
+	text-align: center;
+}
+
+form {
+	width: 436px;
+	margin: 0 auto;
+
+	padding: 40px 0;
+}
+
+form fieldset {
+	width: 100%;
+}
+
+form fieldset.radios {
+	padding: 16px 0;
+}
+
+form input[type="radio"], form label {
+	display: inline-block;
+	margin: 0;
+}
+
+form .full-width input[type="text"], form .full-width textarea, form input[type="submit"] {
+	width: 100%;
+}
+
+form input[type="submit"] {
+	color: #FFF;
+	background: #7ACCCB;
+	width: 100%;
+	border: none;
+	padding: 20px 0;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+form .half-width input[type="text"], form .half-width textarea {
+	width: 49%;
+}
+
+form input[type="text"], form textarea {
+	font-family: 'Merriweather', serif;
+	font-weight: 200;
+	font-size: 18px;
+
+	border: 1px solid #D9B24C;
+	padding: 26px 20px;
+
+	color: #BBB;
+}
+
+form input[type="text"].filled, form textarea.filled {
+	color: #000;
+}
+
+form label {
+	padding: 10px;
 }
