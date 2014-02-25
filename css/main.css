@@ -15,6 +15,9 @@ body {
 	color: #000;
 }
 
+
+
+
 nav {
 	width: 100%;
 	font-family: 'Merriweather Sans', sans-serif;
@@ -65,6 +68,10 @@ nav ul li.logo a {
 nav ul li a:hover {
 	color: #FFF;
 }
+
+
+
+
 
 header {
 	width: 100%;
@@ -169,6 +176,12 @@ h2, h3, h4 {
 h2 {
 	font-size: 22px;
 	text-align: center;
+}
+
+h3 {
+	font-size: 30px;
+	color: #D9B24C;
+	font-style: normal;
 }
 
 h2:before {
@@ -471,6 +484,10 @@ form label {
 
 /* Guide */
 
+.container.RSVP {
+	border-top: 1px solid #D8B14B;
+}
+
 .guide .container {
 	width: 1152px;
 }
@@ -479,8 +496,33 @@ form label {
 	width: 33%;
 	display: inline-block;
 	border-right: 1px solid #D8B14B;
+
+	/* height: 1890px; */
+}
+
+.guide .container.guide .col {
+	height: 1890px;
+}
+
+.guide .headers {
+	padding-top: 20px;
+}
+
+.guide .headers h3 {
+	color: #D9B24C;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.guide .headers .col {
+	border-right: none;
 }
 
 .guide .col:last-child {
 	border-right: none;
+}
+
+.highlight {
+	color: #D9B24C;
+	font-style: italic;
 }
