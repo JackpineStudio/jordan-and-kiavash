@@ -86,7 +86,13 @@ header .bg {
 .rsvp header .bg {
 	background: url( ../img/rsvp-bg.jpg ) center no-repeat;
 	background-size: cover;
-	height: 360px;	
+	height: 420px;
+}
+
+.guide header .bg {
+	background: url( ../img/guide-bg.jpg ) center no-repeat;
+	background-size: cover;
+	height: 420px;
 }
 
 .rsvp header {
@@ -100,6 +106,10 @@ header .bg {
 
 .bg h1 {
 	margin-top: 260px;
+}
+
+.guide .bg h1, .rsvp .bg h1 {
+	margin-top: 30px;
 }
 
 .bg h3 {
@@ -456,4 +466,21 @@ form input[type="text"].filled, form textarea.filled {
 
 form label {
 	padding: 10px;
+}
+
+
+/* Guide */
+
+.guide .container {
+	width: 1152px;
+}
+
+.guide .col {
+	width: 33%;
+	display: inline-block;
+	border-right: 1px solid #D8B14B;
+}
+
+.guide .col:last-child {
+	border-right: none;
 }
