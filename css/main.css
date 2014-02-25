@@ -24,6 +24,8 @@ nav {
 	text-transform: uppercase;
 
 	margin-top: -90px;
+
+	letter-spacing: 3px;
 }
 
 nav ul {
@@ -70,11 +72,25 @@ header {
 	text-align: center;
 }
 
-.bg {
-	background: url( ../img/j+k.jpg ) center center no-repeat;
+header .bg {
 	background-size: cover;
 	width: 100%;
+}
+
+.home header .bg {
+	background: url( ../img/j+k.jpg ) center no-repeat;
+	background-size: cover;
 	height: 764px;
+}
+
+.rsvp header .bg {
+	background: url( ../img/rsvp-bg.jpg ) center no-repeat;
+	background-size: cover;
+	height: 360px;	
+}
+
+.rsvp header {
+	border-bottom: none;
 }
 
 .bg h1, .bg h3 {

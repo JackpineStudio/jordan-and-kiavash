@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kiavash & Jordan | Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body class="rsvp">
+    <header>
+      <div class="bg">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">RSVP</a></li>
+            <li class="logo"><a href="#">J+K</a></li>
+            <li><a href="#">Guide to Ottawa</a></li>
+          </ul>
+        </nav>
+        <h1>RSVP</h1>
+      </div>
+      <img src="img/j+k+heart.png" />
+    </header>
+
+    <div class="container">
+      <div class="form">
+        <h2>Please fill in the form below to RSVP</h2>
+        <span class="required">* Required field</span>
+        <form>
+          <fieldset class="half-width">
+            <input data-value="First Name" name="firstName" id="firstName" type="text" />
+            <input data-value="Last Name" name="lastName" id="lastName" type="text" />
+          </fieldset>
+          <fieldset class="half-width">
+            <input data-value="First Name" name="guestFirstName" id="guestFirstName" type="text" />
+            <input data-value="Last Name" name="guestLastName" id="guestLastName" type="text" />            
+          </fieldset>
+          <fieldset class="radios">
+            <input type="radio" name="going" id="yes" value="yes"><label for="yes">Will totally be there.</label>
+            <input type="radio" name="going" id="no" value="no"><label for="no">Sadly can't make it.</label>
+          </fieldset>
+          <fieldset class="full-width">
+            <input data-value="Email*" name="email" id="email" type="text" /><br />
+            <input data-value="Home Address*" name="address" id="address" type="text" /><br />
+            <input data-value="Contact cell*" name="cell" id="cell" type="text" /><br />
+            <input data-value="Dietary Restrictions" name="dietary-restrictions" id="dietary-restrictions" type="text" /><br />
+            <input data-value="Dance Song Requests" name="song-requests" id="song-requests" type="text" /><br />
+            <textarea data-value="Anything else we should know?" name="notes" id="notes">
+              
+            </textarea><br />
+
+            <input value="RSVP" type="submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function() {
+      $( 'form input[type="text"], form textarea' ).each(function( e, i ) {
+        $( this ).val( $( this ).data( 'value' ) );
+
+        $( this ).on( 'focus', function( e ) {
+          if( $( this ).val() === $( this ).data( 'value' ) ) {
+            $( this ).val( '' ).addClass( 'filled' );
+            return;
+          }
+        }).on( 'blur', function( e ) {
+          if( $( this ).val() === '' ) {
+            $( this ).val( $( this ).data( 'value' ) ).removeClass( 'filled' );
+            return;
+          }
+        });
+      });
+    });
+    </script>
+  </body>
+</html>
