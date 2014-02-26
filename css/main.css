@@ -475,6 +475,18 @@ h2:after {
 	vertical-align: middle;
 }
 
+.map a, .map a:hover {
+	color: #000;
+
+	font-style: italic;
+	font-weight: 600;
+}
+
+.map .pin a {
+	font-style: normal;
+	font-weight: normal;
+}
+
 .map .pin {
 	position: absolute;
 	top: 0;
@@ -484,6 +496,16 @@ h2:after {
 
 	padding-left: 100px;
 	padding-top: 100px;
+
+	cursor: pointer;
+}
+
+.map .pin:hover {
+	opacity: .6;
+}
+
+.map .pin h1 {
+	font-size: 24px;
 }
 
 .map .pin.one {
@@ -658,4 +680,24 @@ form label {
 
 .needed {
 	border: 2px solid red !important;
+}
+
+
+.half-width.first, .half-width.second {
+	position: relative;
+}
+
+.half-width.first span, .half-width.second span {
+	width: 78px;
+	height: 35px;
+
+	position: absolute;
+
+	background: url( ../img/first_person.png ) no-repeat left;
+	top: 8px;
+	left: -90px;
+}
+
+.half-width.second span {
+	background: url( ../img/second_person.png ) no-repeat left;
 }
