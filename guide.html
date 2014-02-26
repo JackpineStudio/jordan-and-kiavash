@@ -191,24 +191,6 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-    $(function() {
-      $( 'form input[type="text"], form textarea' ).each(function( e, i ) {
-        $( this ).val( $( this ).data( 'value' ) );
-
-        $( this ).on( 'focus', function( e ) {
-          if( $( this ).val() === $( this ).data( 'value' ) ) {
-            $( this ).val( '' ).addClass( 'filled' );
-            return;
-          }
-        }).on( 'blur', function( e ) {
-          if( $( this ).val() === '' ) {
-            $( this ).val( $( this ).data( 'value' ) ).removeClass( 'filled' );
-            return;
-          }
-        });
-      });
-    });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

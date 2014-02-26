@@ -23,11 +23,8 @@ nav {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 20px;
 	padding: 80px 0;
-
 	text-transform: uppercase;
-
 	margin-top: -90px;
-
 	letter-spacing: 3px;
 }
 
@@ -444,7 +441,11 @@ form input[type="radio"], form label {
 	margin: 0;
 }
 
-form .full-width input[type="text"], form .full-width textarea, form input[type="submit"] {
+form .full-width input[type="number"],
+form .full-width input[type="email"],
+form .full-width input[type="text"],
+form .full-width textarea,
+form input[type="submit"] {
 	width: 100%;
 }
 
@@ -458,11 +459,15 @@ form input[type="submit"] {
 	font-size: 18px;
 }
 
-form .half-width input[type="text"], form .half-width textarea {
+form .half-width input[type="text"],
+form .half-width textarea {
 	width: 49%;
 }
 
-form input[type="text"], form textarea {
+form input[type="number"],
+form input[type="email"],
+form input[type="text"],
+form textarea {
 	font-family: 'Merriweather', serif;
 	font-weight: 200;
 	font-size: 18px;
@@ -473,8 +478,8 @@ form input[type="text"], form textarea {
 	color: #BBB;
 }
 
-form input[type="text"].filled, form textarea.filled {
-	color: #000;
+.filled {
+	color: #000 !important;
 }
 
 form label {
@@ -486,6 +491,7 @@ form label {
 
 .container.RSVP {
 	border-top: 1px solid #D8B14B;
+	width: 100% !important;
 }
 
 .guide .container {
@@ -525,4 +531,23 @@ form label {
 .highlight {
 	color: #D9B24C;
 	font-style: italic;
+}
+
+
+
+
+.error {
+	display: none;
+	background: #FF9999;
+	border: 2px solid #ff0000;
+	color: #FFF;
+
+	margin: 0 0 10px 0;
+	padding: 20px;
+
+	border-radius: 3px;
+}
+
+.needed {
+	border: 2px solid red !important;
 }
