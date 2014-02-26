@@ -46,6 +46,7 @@ $(function() {
     if( count === required.length ) {
       submit = true;
 
+      // remove filler
       $( 'form input' ).each( function( e, i ) {
         if( $( this ).val() === $( this ).data( 'value' ) ) {
           $( this ).val( '' );

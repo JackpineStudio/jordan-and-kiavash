@@ -8,20 +8,23 @@ a, a:hover {
 
 body {
 	text-align: center;
-
 	margin: 0 auto;
 	padding: 0;
-
 	font-family: 'Merriweather', serif;
 	font-size: 20px;
 	font-weight: 200;
-
 	line-height: 30px;
-
 	color: #000;
-
 	max-width: 1800px;
 	min-width: 1080px;
+}
+
+.container {
+	text-align: left;
+}
+
+.container.headers {
+	text-align: center;
 }
 
 .guide .container a {
@@ -447,12 +450,51 @@ h2:after {
 /* map */
 
 .map {
+	margin: 0 auto;
+	width: 1280px;
 	height: 600px;
 
-	border-top: 1px solid #D8B14B;
-	border-bottom: 1px solid #D8B14B;
+	border: 1px solid #D8B14B;
 
 	background: #E7D2B4;
+
+	background: #E7D2B4 url( ../img/map.png ) no-repeat center center;
+
+	position: relative;
+}
+
+.map h1 {
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.map h1.main {
+	margin: 0 auto;
+	margin-top: 200px;
+	vertical-align: middle;
+}
+
+.map .pin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url( ../img/pin.png ) no-repeat left;
+	text-align: left;
+
+	padding-left: 100px;
+	padding-top: 100px;
+}
+
+.map .pin.one {
+	left: 717px;
+	top: -129px;
+}
+
+.map .pin.two {
+	left: 600px;
+	top: 417px;
+	padding-top: 0px;
 }
 
 /* form jank */
