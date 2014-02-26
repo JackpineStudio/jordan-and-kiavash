@@ -1,4 +1,17 @@
+function scroll( e ) {
+  var faces = $( '.faces' );
+  if( window.pageYOffset > 400 ) {
+    faces.css( 'visibility', 'visible' ).fadeIn( 'slow' );
+  } else {
+    faces.css( 'visibility', 'hidden' ).hide();
+  }
+}
+
 $(function() {
+
+
+  window.addEventListener( 'scroll', scroll, false );
+
   $( 'form input[type="email"], form input[type="text"], form textarea' ).each(function( e, i ) {
     
     $( this ).val( $( this ).data( 'value' ) );

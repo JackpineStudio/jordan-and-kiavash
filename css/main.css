@@ -534,7 +534,27 @@ form label {
 }
 
 
+.heart-faces {
+	position: relative;
+	width: 244px;
+	margin: 0 auto;
+}
 
+.heart-faces .heart {
+	/* position: absolute;
+	top: 0;
+	left: 73px; */
+}
+
+.heart-faces .faces {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.faces {
+	display: none;
+}
 
 .error {
 	display: none;
