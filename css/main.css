@@ -460,6 +460,7 @@ h2:after {
 .required {
 	font-size: 14px;
 	font-family: 'Merriweather Sans', sans-serif;
+	font-style: italic;
 }
 
 .form {
