@@ -1,5 +1,9 @@
-* {
-	box-sizing: border-box;
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+a, a:hover {
+	color: #D8B04B;
 }
 
 body {
@@ -15,8 +19,43 @@ body {
 	color: #000;
 }
 
+.guide .container a {
+	color: #000;
+	font-weight: 500;
+}
+
+.guide .container a:hover {
+	text-decoration: underline;
+}
+
+/* Doves */
+
+nav ul:before {
+	content: '';
+	display: inline-block;
+	width: 134px;
+	height: 99px;
+	background: url( ../img/dove-blue-left.gif ) 0 0 no-repeat;
+	vertical-align: middle;
+}
 
 
+nav ul:after {
+	content: '';
+	display: inline-block;
+	width: 134px;
+	height: 99px;
+	background: url( ../img/dove-blue-right.gif ) 0 0 no-repeat;
+	vertical-align: middle;
+}
+
+.rsvp nav ul:before, .guide nav ul:before {
+	background: url( ../img/dove-orange-left.gif ) 0 0 no-repeat;
+}
+
+.rsvp nav ul:after, .guide nav ul:after {
+	background: url( ../img/dove-orange-right.gif ) 0 0 no-repeat;
+}
 
 nav {
 	width: 100%;
@@ -82,19 +121,19 @@ header .bg {
 }
 
 .home header .bg {
-	background: url( ../img/j+k.jpg ) center no-repeat;
+	background: url( ../img/j+k.jpg ) center bottom no-repeat;
 	background-size: cover;
 	height: 764px;
 }
 
 .rsvp header .bg {
-	background: url( ../img/rsvp-bg.jpg ) center no-repeat;
+	background: url( ../img/rsvp-bg.jpg ) center bottom no-repeat;
 	background-size: cover;
 	height: 420px;
 }
 
 .guide header .bg {
-	background: url( ../img/guide-bg.jpg ) center no-repeat;
+	background: url( ../img/guide-bg.jpg ) center bottom no-repeat;
 	background-size: cover;
 	height: 420px;
 }
@@ -109,11 +148,11 @@ header .bg {
 }
 
 .bg h1 {
-	margin-top: 260px;
+	margin-top: 200px;
 }
 
 .guide .bg h1, .rsvp .bg h1 {
-	margin-top: 30px;
+	margin-top: -20px;
 }
 
 .bg h3 {
@@ -135,6 +174,7 @@ p {
 
 .col.left {
 	border-right: 1px solid #D8B14B;
+	height: 3200px;
 }
 
 .col.right {
@@ -393,7 +433,7 @@ h2:after {
 
 
 
-.united-nations {
+.united-nations, .united-nations a {
 	color: #D8B04B;
 	font-weight: 400;
 	font-style: italic;
@@ -499,7 +539,7 @@ form label {
 }
 
 .guide .col {
-	width: 33%;
+	width: 32.8%;
 	display: inline-block;
 	border-right: 1px solid #D8B14B;
 
@@ -507,7 +547,7 @@ form label {
 }
 
 .guide .container.guide .col {
-	height: 1890px;
+	height: 2000px;
 }
 
 .guide .headers {

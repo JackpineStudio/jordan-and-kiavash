@@ -9,7 +9,6 @@ function scroll( e ) {
 
 $(function() {
 
-
   window.addEventListener( 'scroll', scroll, false );
 
   $( 'form input[type="email"], form input[type="text"], form textarea' ).each(function( e, i ) {
