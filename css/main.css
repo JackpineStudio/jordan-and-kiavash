@@ -6,6 +6,10 @@ a, a:hover {
 	color: #D8B04B;
 }
 
+header a, header a:hover {
+	color: #FFF;
+}
+
 body {
 	text-align: center;
 	margin: 0 auto;
