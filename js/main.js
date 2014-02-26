@@ -42,12 +42,17 @@ $(function() {
     }
 
     if( submit ) {
+      // away we go!
+      $( '.required' ).removeClass( 'needed' );
+      $( '.error' ).hide();
       return;
     } else {
-      $( '.error' ).show().html( 'Please fill in all required fields!' );
+      $( '.error' ).show().html( 'Please fill in <em>all</em> required fields!' );
       $( '.required' ).each( function( e, i ) {
         if( $( this ).val() === $( this ).data( 'value' ) ) {
           $( this ).addClass( 'needed' );
+        } else {
+          $( this ).removeClass( 'needed' );
         }
       });
     }
